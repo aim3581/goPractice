@@ -1,4 +1,6 @@
-//Pacakge calci is used for math operations
+// Pacakge calci impliments math operation fuctions
+// This package supports variety of math operations started from addition of multiple numbers...
+//
 package calci
 
 // Sum is used to calculate addition of passeed list of numbers
