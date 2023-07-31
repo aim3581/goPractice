@@ -8,6 +8,6 @@ import (
 
 func main() {
 	fmt.Println("Hello World!")
-	result := calci.Add(12, 10)
+	result := calci.Sum(12, 10)
 	fmt.Println("Sum = ", result)
 }
