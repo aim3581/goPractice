@@ -1,32 +1,25 @@
 package main
 
-type BigStruct struct {
-	A, B, C int
-	D, E, F string
-	G, H, I bool
-}
+import (
+	"fmt"
+	"strings"
+
+	"practice.com/exercise"
+)
 
 func main() {
-	CreateCopy()
-	CreatePointer()
+	s := "abbcccbbbcaaccbababcbcabca"
+	s = exercise.LongestPalindrome(strings.ToLower(s))
+	fmt.Println(s)
 }
 
-//go:noinline
-func CreateCopy() BigStruct {
-	return BigStruct{
-		A: 123, B: 456, C: 789,
-		D: "ABC", E: "DEF", F: "HIJ",
-		G: true, H: true, I: true,
-	}
-}
+/*
+OUTPUT
+list of palindromes
+if 0 and 1 are same then check all other indices are same or not, if diffrent then sent back all charcters on previous indices. this applies for all indices
 
-//go:noinline
-func CreatePointer() *BigStruct {
-	return &BigStruct{
-		A: 123, B: 456, C: 789,
-		D: "ABC", E: "DEF", F: "HIJ",
-		G: true, H: true, I: true,
-	}
-}
+01234
+2
 
-//OUTPUT
+bab/aba
+*/
