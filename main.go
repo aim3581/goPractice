@@ -2,15 +2,15 @@ package main
 
 import (
 	"fmt"
-	"strings"
 
+	"golang.org/x/tour/tree"
 	"practice.com/exercise"
 )
 
 func main() {
-	s := "abbcccbbbcaaccbababcbcabca"
-	s = exercise.LongestPalindrome(strings.ToLower(s))
-	fmt.Println(s)
+	t1 := tree.New(1)
+	t2 := tree.New(1)
+	fmt.Println(exercise.Same(t1, t2))
 }
 
 /*
